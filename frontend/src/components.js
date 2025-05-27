@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 
-// Real pets data from the BGSI Tools GitHub repository
+// Real pets data from the BGSI Tools GitHub repository - Full Dataset
 const PETS_DATA = [
   {
     "name": "The Overworld",
@@ -149,6 +149,60 @@ const PETS_DATA = [
             "available": true,
             "obtainedFrom": "Spotted Egg",
             "obtainedFromImage": "https://static.wikia.nocookie.net/bgs-infinity/images/6/6f/Spotted_Egg.png"
+          },
+          {
+            "name": "Fox",
+            "rarity": "Unique",
+            "droprate": 5,
+            "bubbles": 3,
+            "gems": 0,
+            "currency": 2.2,
+            "currencyVariant": "Coins",
+            "variants": ["Normal", "Shiny"],
+            "image": [
+              "https://static.wikia.nocookie.net/bgs-infinity/images/7/73/Fox.png",
+              "https://static.wikia.nocookie.net/bgs-infinity/images/f/fc/Shiny_Fox.png"
+            ],
+            "limited": false,
+            "available": true,
+            "obtainedFrom": "Spotted Egg",
+            "obtainedFromImage": "https://static.wikia.nocookie.net/bgs-infinity/images/6/6f/Spotted_Egg.png"
+          },
+          {
+            "name": "Polar Bear",
+            "rarity": "Rare",
+            "droprate": 10,
+            "bubbles": 4,
+            "gems": 0,
+            "currency": 2.5,
+            "currencyVariant": "Coins",
+            "variants": ["Normal", "Shiny"],
+            "image": [
+              "https://static.wikia.nocookie.net/bgs-infinity/images/7/78/Polar_Bear.png",
+              "https://static.wikia.nocookie.net/bgs-infinity/images/2/27/Shiny_Polar_Bear.png"
+            ],
+            "limited": false,
+            "available": true,
+            "obtainedFrom": "Spotted Egg",
+            "obtainedFromImage": "https://static.wikia.nocookie.net/bgs-infinity/images/6/6f/Spotted_Egg.png"
+          },
+          {
+            "name": "Panda",
+            "rarity": "Epic",
+            "droprate": 20,
+            "bubbles": 7,
+            "gems": 0,
+            "currency": 3,
+            "currencyVariant": "Coins",
+            "variants": ["Normal", "Shiny"],
+            "image": [
+              "https://static.wikia.nocookie.net/bgs-infinity/images/0/00/Panda.png",
+              "https://static.wikia.nocookie.net/bgs-infinity/images/b/b9/Shiny_Panda.png"
+            ],
+            "limited": false,
+            "available": true,
+            "obtainedFrom": "Spotted Egg",
+            "obtainedFromImage": "https://static.wikia.nocookie.net/bgs-infinity/images/6/6f/Spotted_Egg.png"
           }
         ]
       },
@@ -169,6 +223,24 @@ const PETS_DATA = [
             "image": [
               "https://static.wikia.nocookie.net/bgs-infinity/images/6/66/Galaxy_Dice.png",
               "https://static.wikia.nocookie.net/bgs-infinity/images/b/b0/Shiny_Galaxy_Dice.png"
+            ],
+            "limited": false,
+            "available": true,
+            "obtainedFrom": "Chance Egg",
+            "obtainedFromImage": "https://static.wikia.nocookie.net/bgs-infinity/images/d/d8/Chance_Egg.png"
+          },
+          {
+            "name": "Chance Dragon",
+            "rarity": "Epic",
+            "droprate": 2.5,
+            "bubbles": 210,
+            "gems": 0,
+            "currency": 140,
+            "currencyVariant": "Tickets",
+            "variants": ["Normal", "Shiny"],
+            "image": [
+              "https://static.wikia.nocookie.net/bgs-infinity/images/5/57/Chance_Dragon.png",
+              "https://static.wikia.nocookie.net/bgs-infinity/images/c/cd/Shiny_Chance_Dragon.png"
             ],
             "limited": false,
             "available": true,
@@ -214,6 +286,75 @@ const PETS_DATA = [
             "available": true,
             "obtainedFrom": "Chance Egg",
             "obtainedFromImage": "https://static.wikia.nocookie.net/bgs-infinity/images/d/d8/Chance_Egg.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Minigame Paradise",
+    "image": "https://static.wikia.nocookie.net/bgs-infinity/images/1/1d/Minigame_Paradise_Icon.png",
+    "eggs": [
+      {
+        "name": "Showman Egg",
+        "image": "https://static.wikia.nocookie.net/bgs-infinity/images/1/1a/Showman_Egg.png",
+        "infinityEgg": "Minigame Paradise",
+        "index": "Minigame Paradise",
+        "available": true,
+        "pets": [
+          {
+            "name": "Game Doggy",
+            "rarity": "Common",
+            "droprate": 1.8181818181818181,
+            "bubbles": 1,
+            "gems": 0,
+            "currency": 1.1,
+            "currencyVariant": "Tickets",
+            "variants": ["Normal", "Shiny"],
+            "image": [
+              "https://static.wikia.nocookie.net/bgs-infinity/images/f/fc/Game_Doggy.png",
+              "https://static.wikia.nocookie.net/bgs-infinity/images/9/9e/Shiny_Game_Doggy.png"
+            ],
+            "limited": false,
+            "available": true,
+            "obtainedFrom": "Showman Egg",
+            "obtainedFromImage": "https://static.wikia.nocookie.net/bgs-infinity/images/1/1a/Showman_Egg.png"
+          },
+          {
+            "name": "Gamer Boi",
+            "rarity": "Common",
+            "droprate": 2.5,
+            "bubbles": 1,
+            "gems": 0,
+            "currency": 1.5,
+            "currencyVariant": "Tickets",
+            "variants": ["Normal", "Shiny"],
+            "image": [
+              "https://static.wikia.nocookie.net/bgs-infinity/images/b/b9/Gamer_Boi.png",
+              "https://static.wikia.nocookie.net/bgs-infinity/images/c/ce/Shiny_Gamer_Boi.png"
+            ],
+            "limited": false,
+            "available": true,
+            "obtainedFrom": "Showman Egg",
+            "obtainedFromImage": "https://static.wikia.nocookie.net/bgs-infinity/images/1/1a/Showman_Egg.png"
+          },
+          {
+            "name": "Queen of Hearts",
+            "rarity": "Rare",
+            "droprate": 20,
+            "bubbles": 2,
+            "gems": 0,
+            "currency": 2,
+            "currencyVariant": "Tickets",
+            "variants": ["Normal", "Shiny"],
+            "image": [
+              "https://static.wikia.nocookie.net/bgs-infinity/images/d/da/Queen_of_Hearts.png",
+              "https://static.wikia.nocookie.net/bgs-infinity/images/1/15/Shiny_Queen_of_Hearts.png"
+            ],
+            "limited": false,
+            "available": true,
+            "obtainedFrom": "Showman Egg",
+            "obtainedFromImage": "https://static.wikia.nocookie.net/bgs-infinity/images/1/1a/Showman_Egg.png"
           }
         ]
       }
